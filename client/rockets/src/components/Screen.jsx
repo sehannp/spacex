@@ -26,7 +26,7 @@ const Screen = props => {
             <Grid item container xs={12} md={12} justify="center">
               {
                 width === 'xs' ?
-                <Paper style={{overflowY: 'auto', overflowX: 'hidden', maxWidth: "66.6vh", maxHeight: "100vh"}}>
+                <Paper style={{overflowY: 'auto', wordWrap: "break-word", overflowX: 'hidden', maxWidth: "66.6vh", maxHeight: "100vh"}}>
                   {message}
                 </Paper> :
                 <Paper style={{overflowY: 'auto', overflowX: 'hidden', maxWidth: "100vh", maxHeight: "33.33vh"}}>

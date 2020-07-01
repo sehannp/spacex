@@ -1,4 +1,4 @@
-import React, { useState,useEffect }  from 'react';
+import React, { useState }  from 'react';
 import { connect} from "react-redux";
 
 import Grid from '@material-ui/core/Grid';
@@ -48,11 +48,6 @@ const Controls = props => {
         console.log(target.value);
     };
 
-    const getLaunchPad = () => {
-        console.log(launchPadId);
-        getLaunchPadById(launchPadId);
-    };
-
     return (
         <Grid item container className={classes.root} xs={4} md={12}>
                 <Grid item container className={classes.capsule} xs={12} md={3}>
@@ -61,7 +56,7 @@ const Controls = props => {
                     </Button>
                 </Grid>
                 <Grid item container className={classes.capsule} xs={12} md={3}>
-                    <img height= "100" src={ require('../assets/newRocket.jpg') } />
+                    <img alt="rocketlogo" height= "100" src={ require('../assets/newRocket.jpg') } />
                     {/* <NewRocket/> */}
                 </Grid>
                 <Grid item container className={classes.capsule} xs={12} md={3}>

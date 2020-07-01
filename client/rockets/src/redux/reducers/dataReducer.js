@@ -1,4 +1,4 @@
-import { FETCH_LAUNCHPAD_DETAILS,FETCH_CAPSULES} from "../actions/actionTypes";
+import { FETCH_LAUNCHPAD_DETAILS,SET_MESSAGE} from "../actions/actionTypes";
 
 const INITIAL_STATE = {
     message:''
@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 const dataReducer = (currentState=INITIAL_STATE,action) => {
     switch(action.type) {
 
-        case "SET_MESSAGE":
+        case SET_MESSAGE:
             console.log(action.payload);
             return {
                 ...currentState,

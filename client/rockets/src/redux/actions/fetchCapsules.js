@@ -1,8 +1,8 @@
-import { FETCH_CAPSULES  } from "./actionTypes";
+import { SET_MESSAGE  } from "./actionTypes";
 
 export const setMessage = (message) => {
   return {
-    type: "SET_MESSAGE",
+    type: SET_MESSAGE,
     payload: message
   }
 }
